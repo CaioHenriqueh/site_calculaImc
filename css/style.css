@@ -195,3 +195,7 @@ form{
 .tabelaimc img{
     max-width: 60%;
 }
+.tabelaimc h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
