@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/ouL1lfSP_CyUgb5OUvI51jG3cevMfulA1GZGtS63r3Xfa8STYiIxq6KiY3PkMc6PcTk=w240-h480-rw" type="image/x-icon">
+    <title>Calcular Imc</title>
+</head>
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+        <div class="logo_header">
+            Calcular Imc
+        </div>
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+                <a href="#oquee" class="active">Oque é Imc ?</a>
+                <a href="#calcula" class="active">Calcular meu Imc</a>
+                <a href="#tabela" class="active">Tabela imc</a>
+        </div>
+    </div>
+    <div class="img-imc"  >
+        <img  src="https://www.lucianaspina.com.br/wp-content/uploads/2018/05/IMC.jpg" alt="imagem imc">
+        <div ></div>
+    </div>
+
+    <div class="contentt" >
+        <h1 >Oque é imc ?</h1>
+    </div>
+    <section class="infoImc" id="oquee">
+        <p>IMC significa Índice de Massa Corporal e trata-se de uma medida do peso de cada pessoa, sendo uma relação entre a massa da pessoa e a sua altura ao quadrado.
+            A partir desse cálculo é possível avaliar se a pessoa está com um peso ideal ou se está abaixo ou acima do peso. Tanto níveis abaixo, como níveis acima do peso ideal, podem oferecer riscos à saúde do indivíduo.
+            Esta é uma medida de referência internacional reconhecida pela OMS (Organização Mundial da Saúde). É um cálculo simples para avaliar o peso, porém não mede diretamente a gordura corporal, já que não contempla a massa magra, massa gorda, líquidos e a estrutura óssea da pessoa em questão.<p ></p></p> 
+    </section>
+    <section class="calculaimc" id="calcula">
+        <div class="alinha" >
+            <h2>Calcular meu imc</h2>
+           <form action="">
+                <label for="peso">peso</label>
+                    <input required type="text" placeholder="Peso(kg)" id="peso" >
+                    <br>
+                    <label for="altura">altura</label>
+                    <input required type="number" placeholder="Altura(m)" id="altura" >
+
+                    <input type="submit" value="calcular" id="btnimc">
+            </form>
+                <span class="spnImc" id="mensagem"> </span>
+                <span class="spnImc" id="imc"> </span>
+        </div>
+    </section>
+    <div class="tabelaimc" >
+        <img id="tabela"src="https://www.drrogermoura.com.br/images/artigos/tabela-imc.png" alt="tabela imc">
+    </div>
+    <script src="js/function.js"></script>
+    <script src="js/validacao.js"></script>
+</body>
+</html>
