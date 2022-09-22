@@ -1,8 +1,5 @@
+@charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700;800&family=Josefin+Slab:wght@100;200;300;500&family=Mulish:ital,wght@0,200;0,300;1,300&family=Noto+Sans:wght@200&family=Roboto:wght@300&display=swap');
- 
-html{
-    scroll-behavior: smooth;
-}
 :root{
     --color-white: #fff;
     --color-dark1: rgb(39, 39, 39);
@@ -50,7 +47,6 @@ body{
 .contentt h1{
     padding: 5px;
     text-align: center;
-
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 1s;
 }
@@ -76,27 +72,6 @@ body{
     cursor: pointer;
     display: none;
 }
-@media screen and (min-width: 768px) {
-    .navigation_header{
-        position: absolute;
-        flex-direction: column !important;
-        top: 0;
-        background: var(--color-dark3);
-        height: 1000%;
-        width: 35vw;
-        padding: 1em;
-        animation-duration: .5s;
-        margin-left: -100vw;
-    }
-    .btn_icon_header{
-        display: block;
-    }
-}
-@media screen and (min-width: 768px) {
-    .active{
-        color: var(--color-white);
-    }
-}
 @keyframes showSidebar {
     from {margin-left: -100vw;}
     to {margin-left: -10vw;}
@@ -110,14 +85,10 @@ body{
     transition: 1s;
     min-width: 85%;
 }
-@media screen and (min-width: 768px){
-    .img-imc img{
-        width: 85%;
-    }
-}
 .infoImc{
     font-family: 'Baloo Tamma 2', cursive;
-    margin: 10px;
+    margin: 15px;
+    padding: 5px;
 }
 .calculaimc{
     text-align: center;
@@ -168,11 +139,6 @@ label{
     font: 20px arial;
     
 }
-@media (min-width:768px){
-    label{
-        margin-left: -32%;
-    }
-}
 form{
     background-color: var(--color-white);
     border-radius: 100% 10%;
@@ -190,6 +156,7 @@ form{
     color: yellow;
 }
 .tabelaimc {
+    margin-top: 10px;
     text-align: center;
 }
 .tabelaimc img{
@@ -198,4 +165,39 @@ form{
 .tabelaimc h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 10px;
+}
+.resultado-imc{
+    text-align: center;
+    margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    .navigation_header{
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: var(--color-dark3);
+        height: 560%;
+        width: 30vw;
+        padding: 1em;
+        animation-duration: .5s;
+        margin-left: -100vw;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .active{
+        color: var(--color-white);
+    }
+}
+@media (max-width:768px){
+    label{
+        margin-left: -32%;
+    }
+}
+@media screen and (max-width: 768px){
+    .img-imc img{
+        width: 85%;
+    }
 }

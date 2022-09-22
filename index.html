@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" media="all">
     <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/ouL1lfSP_CyUgb5OUvI51jG3cevMfulA1GZGtS63r3Xfa8STYiIxq6KiY3PkMc6PcTk=w240-h480-rw" type="image/x-icon">
     <title>Calcular Imc</title>
 </head>
@@ -38,8 +38,8 @@
     </div>
     <section class="infoImc" id="oquee">
         <p>IMC significa Índice de Massa Corporal e trata-se de uma medida do peso de cada pessoa, sendo uma relação entre a massa da pessoa e a sua altura ao quadrado.
-            A partir desse cálculo é possível avaliar se a pessoa está com um peso ideal ou se está abaixo ou acima do peso. Tanto níveis abaixo, como níveis acima do peso ideal, podem oferecer riscos à saúde do indivíduo.
-            Esta é uma medida de referência internacional reconhecida pela OMS (Organização Mundial da Saúde). É um cálculo simples para avaliar o peso, porém não mede diretamente a gordura corporal, já que não contempla a massa magra, massa gorda, líquidos e a estrutura óssea da pessoa em questão.<p ></p></p> 
+        A partir desse cálculo é possível avaliar se a pessoa está com um peso ideal ou se está abaixo ou acima do peso. Tanto níveis abaixo, como níveis acima do peso ideal, podem oferecer riscos à saúde do indivíduo.
+        Esta é uma medida de referência internacional reconhecida pela OMS (Organização Mundial da Saúde). É um cálculo simples para avaliar o peso, porém não mede diretamente a gordura corporal, já que não contempla a massa magra, massa gorda, líquidos e a estrutura óssea da pessoa em questão.</p>
     </section>
     <section class="calculaimc" id="calcula">
         <div class="alinha" >
@@ -50,13 +50,14 @@
                     <br>
                     <label for="altura">altura</label>
                     <input required type="number" placeholder="Altura(m)" id="altura" >
-
                     <input type="submit" value="calcular" id="btnimc">
-            </form>
-                <span class="spnImc" id="mensagem"> </span>
-                <span class="spnImc" id="imc"> </span>
+           </form>          
         </div>
     </section>
+    <div class="resultado-imc">
+        <span class="spnImc" id="mensagem"></span>
+        <span class="spnImc" id="imc"></span>
+    </div>
     <div class="tabelaimc">
         <h1>Tabela Imc</h1>
         <img id="tabela"src="https://www.drrogermoura.com.br/images/artigos/tabela-imc.png" alt="tabela imc">

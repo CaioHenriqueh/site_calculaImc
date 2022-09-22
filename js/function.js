@@ -49,7 +49,6 @@ btnimc.addEventListener("click" , function(){
         imclog.textContent = ` ${imc}`
         form.reset()
     }
-   
 })
 console.log(menulinks)
 function getDistanceFromTheTop(element) {
@@ -62,7 +61,7 @@ function getDistanceFromTheTop(element) {
     smoothScrollTo(0, distanceFromTheTop);
   }
   
-  menulinks.forEach((link) => {
+  menulinks.forEach((link) => { 
     link.addEventListener("click", scrollToSection);
   });
   
