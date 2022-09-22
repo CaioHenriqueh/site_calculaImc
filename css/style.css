@@ -9,20 +9,21 @@
     --color-dark5: #343434;
     --color-purple: #b040ff;
 }
+
 *{
     margin: 0;
     padding: 0;
 }
-body{ 
-    scroll-behavior: smooth;
+body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-dark1);
     color: var(--color-white);
+ 
 }
 .logo_header{
     width: 45px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 18px; 
 }
 .header,
 .navigation_header{
