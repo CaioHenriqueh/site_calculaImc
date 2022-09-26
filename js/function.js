@@ -50,7 +50,6 @@ btnimc.addEventListener("click" , function(){
         form.reset()
     }
 })
-console.log(menulinks)
 function getDistanceFromTheTop(element) {
     const id = element.getAttribute("href");
     return document.querySelector(id).offsetTop;
