@@ -37,14 +37,21 @@ window.addEventListener("resize", function (event) {
 });
 
 function calculaImc(peso, altura) {
-  return peso / (altura * altura);
+  if (peso < 0  || altura < 0) {
+    mensagem.textContent = "Peso ou Altura invalida.";
+    mensagem.classList.add("invalido");
+    form.reset()
+  } else {
+    return peso / (altura * altura);
+  }
 }
-btnimc.addEventListener("click", function () {
+btnimc.addEventListener("click", function (e) {
   let imc = calculaImc(peso.value, altura.value).toFixed(2);
   if (peso.value === "" || altura.value === "") {
     mensagem.textContent = "";
     imclog.textContent = "";
   } else {
+    mensagem.classList.remove("invalido");
     mensagem.textContent = `Seu Imc é: `;
     imclog.textContent = ` ${imc}`;
     form.reset();
@@ -89,4 +96,3 @@ function smoothScrollTo(endX, endY, duration) {
     window.scroll(newX, newY);
   }, 1000 / 60);
 }
-

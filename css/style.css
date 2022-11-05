@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@700;800&family=Josefin+Slab:wght@100;200;300;500&family=Mulish:ital,wght@0,200;0,300;1,300&family=Noto+Sans:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root{
     --color-white: #fff;
     --color-dark1: rgb(39, 39, 39);
@@ -18,7 +19,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--color-dark1);
     color: var(--color-white); 
- 
 }
 .logo_header{
     width: 45px;
@@ -103,6 +103,12 @@ input{
     margin: auto;
     color: var(--color-white);
     background-color: var(--color-dark3);
+    outline: 0;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 ::placeholder{
     color: white;
@@ -123,9 +129,10 @@ input{
     border-radius: 10px;
     font:18px arial;
     cursor: pointer;
-    margin-top: 10px;
-    color: var(--color-white);
+    margin-top: 10px; 
     border: 3px solid var(--color-purple);
+    color: var(--color-white);
+    padding:6px ;
     background-color: var(--color-dark3);
 }
 #mensagem{
@@ -170,6 +177,12 @@ form{
     text-align: center;
     margin-top: 10px;
 }
+.invalido{
+    background: red;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 5px;
+}
 @media screen and (max-width: 768px) {
     .navigation_header{
         position: absolute;
@@ -209,10 +222,9 @@ table{
     margin-top:20px ;
     text-align: center;
     margin-bottom: 30px;
-    width: 600px;
+    width: 550px;
 }
 th{
-    border: 3px solid white;
     padding:10px ;
     color: black;
     margin:10px ;
@@ -220,7 +232,7 @@ th{
     background:white;
 }
 td{
-    padding: 10px;
+    padding: 8px;
     color: black;
     font-size: 20px;
     font-weight: bold;
@@ -245,6 +257,7 @@ td{
 }
 @media (max-width:768px){
     table{
-        width: 450px;
+        width: 400px;
+        margin: 0 20px ;
     }
 }
