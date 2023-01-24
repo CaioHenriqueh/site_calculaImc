@@ -37,26 +37,32 @@ window.addEventListener("resize", function (event) {
 });
 
 function calculaImc(peso, altura) {
-  if (peso < 0  || altura < 0) {
+  if (peso < 0 || altura < 0) {
     mensagem.textContent = "Peso ou Altura invalida.";
     mensagem.classList.add("invalido");
-    form.reset()
+    form.reset();
   } else {
     return peso / (altura * altura);
   }
 }
-btnimc.addEventListener("click", function (e) {
+
+btnimc.addEventListener("click", () => {
   let imc = calculaImc(peso.value, altura.value).toFixed(2);
+  localStorage.setItem("ValueIMC", imc);
+  
+});
+const valida = () => {
   if (peso.value === "" || altura.value === "") {
     mensagem.textContent = "";
     imclog.textContent = "";
-  } else {
+    return;
+  } else{
     mensagem.classList.remove("invalido");
     mensagem.textContent = `Seu Imc é: `;
-    imclog.textContent = ` ${imc}`;
+    imclog.textContent = ` ${localStorage.getItem("valueIMC")}`;
     form.reset();
   }
-});
+};
 function getDistanceFromTheTop(element) {
   const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
